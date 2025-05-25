@@ -1,4 +1,4 @@
-Link repository ETS : 
+Link repository ETS : https://github.com/JoeBidenJoestar/Progjar/tree/ETS
 # Tugas ETS Multithreading dan Multiprocessing
 ## Penjelasan Arsitektur
 Arsitektur stress test ini terdiri dari dua komponen utama: 
