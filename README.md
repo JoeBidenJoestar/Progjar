@@ -17,8 +17,25 @@ Di atas adalah tampilan sisi server ketika dinyalakan, menggunakan argumen yang 
 Di atas adalah tampilan sisi client ketika program `file_client_cli.py` dinyalakan (dalam gambar saya merename file tersebut). Client menjalankan program dan juga memasukan argumen yang diinginkan.
 
 ## Tabel Hasil
-![Uploading image.png…]()  
-Di atas adalah screenshot sebagian tabel yang mencatat ketika server menggunakan multithreading. Untuk
+![image](https://github.com/user-attachments/assets/723ffebe-3c77-4153-8641-4479971a69fd)
+Di atas adalah screenshot sebagian tabel yang mencatat ketika server menggunakan multiprocessing. Untuk tabel lengkapnya (termasuk juga tabel multithreading) bisa diakses di [https://github.com/JoeBidenJoestar/Progjar/blob/ETS/ETS_Progjar.xlsx](url).  
+Pada tabel tercatat jumlah server worker, client worker, ukuran file, time/client, throughput/client, jumlah sukses dan gagal. Ada pula yang isinya >180 dan `null`. Hal ini disebabkan karena program dibuat untuk menghentikan eksekusi jika melewati timeout 180 detik. Saat program dijalankan, jika melebihi waktu 180 detik maka output untuk time/client dan throughput/client menjadi nilai 0. Hal ini bertujuan supaya tidak memakan waktu yang lama.
+
+## Kesimpulan Percobaan
+Multiprocessing lebih cocok ketika terdapat lebih dari satu client worker (dan lebih dari satu server worker) ketimbang multithreading, hal ini bisa dilihat pada tabel:  
+![image](https://github.com/user-attachments/assets/f17aed69-18fa-4faf-abaa-1bd5c182b163)  
+Tabel Multiprocessing (1)
+![image](https://github.com/user-attachments/assets/1aad761b-8e2d-42c1-8e17-5b624a35b1f1)  
+Tabel Multiprocessing (2)
+![image](https://github.com/user-attachments/assets/35be9d3f-5aed-4840-9888-59f7047c41c5)  
+Tabel Multithreading (1)
+![image](https://github.com/user-attachments/assets/80bb3a9d-96f9-475e-b2ad-ffd15f045417)  
+Tabel Multithreading (2)  
+Pada beberapa kesempatan, multiprocessing menggungguli multithread dalam hal kecepatan waktu walaupun kasus lain hanya memiliki selisih beberapa detik yang kemungkinan karena masalah internal atau eksternal saat pengujian.
+
+
+
+
 
 
 
