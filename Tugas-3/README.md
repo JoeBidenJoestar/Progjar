@@ -1,7 +1,5 @@
 # Tugas 3 Pemrograman Jaringan
 
-**Link Git:** [https://github.com/JoeBidenJoestar/Progjar/tree/Tugas-3](https://github.com/JoeBidenJoestar/Progjar/tree/Tugas-3)
-
 ---
 ![image](https://github.com/user-attachments/assets/aa96c80a-01d6-46c6-83bd-3a32ee9ca59b)
 
